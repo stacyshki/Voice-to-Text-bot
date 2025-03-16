@@ -5,12 +5,18 @@
 		"info": "Контекст",
 		"reply": "Ответ",
 		"solution": "Решение",
+		"summarize": "Суммаризация",
+		"note": "Конспект",
+		"enhancement": "Улучшение",
+		"prompt-summarize": "Суммаризируй следующий текст, сохранив ключевые моменты и смысл. Суммаризация не может быть длиннее исходного текста. Если запрос начинается на русском и затем включает другой язык, предоставь суммаризацию на обоих. Текст: ",
+		"prompt-note": "Составь структурированный конспект по данному тексту, выделяя основные моменты кратко, но без лишней информации. Конспект должен быть достаточно подробным, чтобы его можно было использовать. Если запрос начинается на русском, а затем содержит другой язык, сделай конспект на обоих. Текст: ",
+		"prompt-enhancement": "Улучшить следующий текст, исправив грамматику, пунктуацию и форматирование. Ответ должен быть ровно таким же по словам, как входящий текст — только исправленные ошибки. Никаких дополнительных изменений. Текст: ",
 		"prompt-solution": "Предложи логичное и обоснованное решение следующей проблемы. Учти разные точки зрения, возможные риски и культурный контекст. Соблюдай языковую чувствительность. Если запрос начинается на русском, ответ должен быть на русском. Если далее указан другой язык, ответ должен быть и на русском, и на этом языке. Проблема: ",
 		"prompt-beautify": "Перепиши и улучши следующий текст, сохраняя его первоначальный смысл. Сделай его более элегантным, ясным и выразительным, при этом оставив естественный тон. Соблюдай языковую чувствительность и учитывай культурный контекст. Если запрос начинается на русском, ответ должен быть на русском. Если далее указан другой язык, ответ должен быть и на русском, и на этом языке. Текст: ",
 		"prompt-analyze": "Проанализируй следующий текст с точки зрения тона, смысла и структуры. Определи ключевые темы, эмоциональные оттенки и возможные скрытые смыслы. Соблюдай языковую чувствительность и учитывай культурный контекст. Если запрос начинается на русском, ответ должен быть на русском. Если далее указан другой язык, ответ должен быть и на русском, и на этом языке. Текст: ",
 		"prompt-info": "Дай подробную справочную информацию по следующему тексту. Объясни его смысл, контекст и важные исторические или культурные аспекты. Соблюдай языковую чувствительность и учитывай культурный контекст. Если запрос начинается на русском, ответ должен быть на русском. Если далее указан другой язык, ответ должен быть и на русском, и на этом языке. Текст: ",
 		"prompt-reply": "Сформулируй осмысленный и уместный ответ на следующий текст. Соблюдай логическую последовательность, естественность и языковую чувствительность. Если запрос начинается на русском, ответ должен быть на русском. Если далее указан другой язык, ответ должен быть и на русском, и на этом языке. Текст: ",
-		"intro": "Данный бот позволит Вам работать с человеческой речью.\n\nВы можете прислать своё голосовое, аудио или любое видео, на что Вы получите транскрибированный текст. Также вы просто можете прислать любой текст.\n\nДалее Вам следует нажать на одну из кнопок:\n\tРедактирование - красиво переписать\n\tАнализ - проанализировать текст\n\tКонтекст - получить информацию о содержании\n\tОтвет - сгенерировать ответ на текст\n\tРешение - попросить решение проблемы"
+		"intro": "Данный бот позволит Вам работать с человеческой речью.\n\nПришлите своё голосовое, текст, аудио или видеофайл и получите транскрибированный текст.\n\nРабота с текстом с помощью кнопок:\n\t\tРедактирование - красиво переписать\n\t\tАнализ - проанализировать текст\n\t\tКонтекст - получить информацию о содержании\n\t\tОтвет - сгенерировать ответ на текст\n\t\tРешение - попросить решение проблемы\n\t\tСуммаризация - суммаризация текста\n\t\tКонспект - конспектировать текст\n\t\tУлучшение - исправить ошибки текста"
 	},
 	"EN": {
 		"beautify": "Beautify",
@@ -18,11 +24,17 @@
 		"info": "Context",
 		"reply": "Reply",
 		"solution": "Solution",
+		"summarize": "Summary",
+		"note": "Note-taking",
+		"enhancement": "Enhancement",
+		"prompt-summarize": "Summarize the following text while preserving its key points and meaning. The summary must not be longer than the original text. If the request starts in English and then specifies another language, provide summaries in both. Text: ",
+		"prompt-note": "Create a structured note from the given text, highlighting the main points concisely. The note should be detailed enough to be useful, but without unnecessary information. If the request starts in English and includes another language, generate notes in both. Text: ",
+		"prompt-enhancement": "Improve the following text by correcting grammar, punctuation, and formatting. The output must be identical to the original in wording—only errors should be fixed. No extra words or changes beyond correctness. Text: ",
 		"prompt-solution": "Suggest a well-reasoned solution to the following problem. Consider different perspectives, possible risks, and cultural context. Maintain linguistic sensitivity. If the prompt starts in English, respond in English. If another language follows, respond in both English and that language. Problem: ",
 		"prompt-beautify": "Rewrite and improve the following text while preserving its original meaning. Make it more elegant, clear, and engaging while ensuring a natural tone. Maintain linguistic sensitivity and cultural awareness. If the prompt starts in English, respond in English. If another language follows, respond in both English and that language. Text: ",
 		"prompt-analyze": "Analyze the following text for tone, meaning, and structure. Identify key themes, emotional undertones, and any implicit messages. Maintain linguistic sensitivity and cultural awareness. If the prompt starts in English, respond in English. If another language follows, respond in both English and that language. Text: ",
 		"prompt-info": "Provide detailed background information on the following text. Explain its meaning, context, and any relevant historical or cultural aspects. Ensure linguistic sensitivity and cultural awareness. If the prompt starts in English, respond in English. If another language follows, respond in both English and that language. Text: ",
 		"prompt-reply": "Generate a contextually appropriate and thoughtful response to the following text. Maintain coherence, logical flow, and linguistic sensitivity. If the prompt starts in English, respond in English. If another language follows, respond in both English and that language. Text: ",
-		"intro": "This bot will allow you to work with human speech.\n\nYou can send your voice message, audio or any video, and you will receive a transcribed text. You can also simply send any text.\n\nNext, you should click one of the buttons:\n\tBeautify - rewrite beautifully\n\tAnalyze - analyze the text\n\tInfo - get information about the content\n\tReply - generate a response to the text\n\tSolution - ask for a solution to the problem"
+		"intro": "This bot will allow you to work with human speech.\n\nYou can send your voice message, audio or any video, even tetx, and receive a transcribed text.\n\nUse the following buttons:\n\t\tBeautify - rewrite beautifully\n\t\tAnalyze - analyze the text\n\t\tInfo - get information about the content\n\t\tReply - generate a response to the text\n\t\tSolution - ask for a solution to the problem\n\t\tSummary - summarize text\n\t\tNote-taking - create notes of the text\n\t\tEnhancement - correct text mistakes"
 	}
 }
