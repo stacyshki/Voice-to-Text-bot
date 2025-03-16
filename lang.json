@@ -1,0 +1,28 @@
+{
+	"RU": {
+		"beautify": "Редактирование",
+		"analyze": "Анализ",
+		"info": "Контекст",
+		"reply": "Ответ",
+		"solution": "Решение",
+		"prompt-solution": "Предложи логичное и обоснованное решение следующей проблемы. Учти разные точки зрения, возможные риски и культурный контекст. Соблюдай языковую чувствительность. Если запрос начинается на русском, ответ должен быть на русском. Если далее указан другой язык, ответ должен быть и на русском, и на этом языке. Проблема: ",
+		"prompt-beautify": "Перепиши и улучши следующий текст, сохраняя его первоначальный смысл. Сделай его более элегантным, ясным и выразительным, при этом оставив естественный тон. Соблюдай языковую чувствительность и учитывай культурный контекст. Если запрос начинается на русском, ответ должен быть на русском. Если далее указан другой язык, ответ должен быть и на русском, и на этом языке. Текст: ",
+		"prompt-analyze": "Проанализируй следующий текст с точки зрения тона, смысла и структуры. Определи ключевые темы, эмоциональные оттенки и возможные скрытые смыслы. Соблюдай языковую чувствительность и учитывай культурный контекст. Если запрос начинается на русском, ответ должен быть на русском. Если далее указан другой язык, ответ должен быть и на русском, и на этом языке. Текст: ",
+		"prompt-info": "Дай подробную справочную информацию по следующему тексту. Объясни его смысл, контекст и важные исторические или культурные аспекты. Соблюдай языковую чувствительность и учитывай культурный контекст. Если запрос начинается на русском, ответ должен быть на русском. Если далее указан другой язык, ответ должен быть и на русском, и на этом языке. Текст: ",
+		"prompt-reply": "Сформулируй осмысленный и уместный ответ на следующий текст. Соблюдай логическую последовательность, естественность и языковую чувствительность. Если запрос начинается на русском, ответ должен быть на русском. Если далее указан другой язык, ответ должен быть и на русском, и на этом языке. Текст: ",
+		"intro": "Данный бот позволит Вам работать с человеческой речью.\n\nВы можете прислать своё голосовое, аудио или любое видео, на что Вы получите транскрибированный текст. Также вы просто можете прислать любой текст.\n\nДалее Вам следует нажать на одну из кнопок:\n\tРедактирование - красиво переписать\n\tАнализ - проанализировать текст\n\tКонтекст - получить информацию о содержании\n\tОтвет - сгенерировать ответ на текст\n\tРешение - попросить решение проблемы"
+	},
+	"EN": {
+		"beautify": "Beautify",
+		"analyze": "Analysis",
+		"info": "Context",
+		"reply": "Reply",
+		"solution": "Solution",
+		"prompt-solution": "Suggest a well-reasoned solution to the following problem. Consider different perspectives, possible risks, and cultural context. Maintain linguistic sensitivity. If the prompt starts in English, respond in English. If another language follows, respond in both English and that language. Problem: ",
+		"prompt-beautify": "Rewrite and improve the following text while preserving its original meaning. Make it more elegant, clear, and engaging while ensuring a natural tone. Maintain linguistic sensitivity and cultural awareness. If the prompt starts in English, respond in English. If another language follows, respond in both English and that language. Text: ",
+		"prompt-analyze": "Analyze the following text for tone, meaning, and structure. Identify key themes, emotional undertones, and any implicit messages. Maintain linguistic sensitivity and cultural awareness. If the prompt starts in English, respond in English. If another language follows, respond in both English and that language. Text: ",
+		"prompt-info": "Provide detailed background information on the following text. Explain its meaning, context, and any relevant historical or cultural aspects. Ensure linguistic sensitivity and cultural awareness. If the prompt starts in English, respond in English. If another language follows, respond in both English and that language. Text: ",
+		"prompt-reply": "Generate a contextually appropriate and thoughtful response to the following text. Maintain coherence, logical flow, and linguistic sensitivity. If the prompt starts in English, respond in English. If another language follows, respond in both English and that language. Text: ",
+		"intro": "This bot will allow you to work with human speech.\n\nYou can send your voice message, audio or any video, and you will receive a transcribed text. You can also simply send any text.\n\nNext, you should click one of the buttons:\n\tBeautify - rewrite beautifully\n\tAnalyze - analyze the text\n\tInfo - get information about the content\n\tReply - generate a response to the text\n\tSolution - ask for a solution to the problem"
+	}
+}
