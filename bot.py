@@ -6,10 +6,11 @@ import json
 from os import getenv, remove
 from dotenv import load_dotenv
 from aiogram.types import Message
-from aiogram.types.input_file import FSInputFile
 from aiogram import Bot, Dispatcher, types
 from aiogram.filters import CommandStart
-from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardButton, InlineKeyboardMarkup
+from aiogram.types import (ReplyKeyboardMarkup, KeyboardButton,
+    InlineKeyboardButton, InlineKeyboardMarkup
+)
 
 
 load_dotenv()
@@ -19,6 +20,7 @@ bot = Bot(token = TOKEN)
 dp = Dispatcher()
 
 with open("lang.json", mode = "r", encoding = "utf-8") as read_file:
+    
     lang = json.load(read_file)
 
 btn_lang_en = KeyboardButton(text = "English \U0001f1ec\U0001f1e7")
@@ -100,14 +102,16 @@ async def intro_message(message : types.Message):
 
 
 async def ask_action(message : types.Message):
+    
     await message.answer(
         message.text,
         reply_markup = main_keyboard
     )
 
 
-@dp.message(lambda message: message.text)
+@dp.message(lambda message : message.text)
 async def handle_user_text(message : types.Message):
+    
     await ask_action(message)
 
 
@@ -125,15 +129,15 @@ async def handle_callback_query(callback_query : types.CallbackQuery):
     await callback_query.answer()
 
 
-@dp.message(lambda message: message.voice or message.audio or message.video or message.video_note)
-async def handle_media_message(message: Message):
+@dp.message(lambda message : message.voice or message.audio or message.video or message.video_note)
+async def handle_media_message(message : Message):
     """
     Handles voice messages, audio files, video files, and video notes.
-    Downloads the file, transcribes it using SpeechProcessing, and sends back the transcribed text.
+    Downloads the file, transcribes it using SpeechProcessing, and sends back
+    the transcribed text.
     The downloaded file is deleted after processing.
     """
-
-    # Determine file type and get Telegram file ID
+    
     if message.voice:
         file_id = message.voice.file_id
     elif message.audio:
@@ -143,27 +147,25 @@ async def handle_media_message(message: Message):
     elif message.video_note:
         file_id = message.video_note.file_id
     else:
-        return  # Should not reach here, but just in case
-
-    # Download the file
+        return
+    
     file = await bot.get_file(file_id)
     file_path = file.file_path
-    local_filename = f"temp_{file_id}"  # Temporary file name
+    local_filename = f"temp_{file_id}"
+    
     await bot.download_file(file_path, local_filename)
-
+    
     try:
-        # Transcribe the audio/video to text
         speech_processor = SpeechProcessing()
         transcribed_text = speech_processor.to_text(local_filename)
-
-        # Send transcribed text with action buttons
-        await message.answer(transcribed_text, reply_markup=main_keyboard)
+        
+        await message.answer(transcribed_text, reply_markup = main_keyboard)
     finally:
-        # Remove the temporary file after processing
         remove(local_filename)
 
 
 async def main():
+    
     await bot.delete_webhook(drop_pending_updates = True)
     
     await dp.start_polling(bot)
