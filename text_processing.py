@@ -19,7 +19,7 @@ class GenI:
         '''
         
         return self.__client.chat.completions.create(
-            model="gpt-4o-mini",
-            messages=[{"role": "user", "content": prompt}],
-            web_search=False
+            model = "gpt-4o-mini",
+            messages = [{"role": "user", "content": prompt}],
+            web_search = False
         ).choices[0].message.content
