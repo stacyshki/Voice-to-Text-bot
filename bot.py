@@ -122,9 +122,9 @@ async def handle_callback_query(callback_query : types.CallbackQuery):
     prompt = (lang[use_language]["prompt-" + action] + 
         callback_query.message.text
     )
-    answer = gpt.ask_gpt(prompt = prompt).replace("###", "•").replace("**", "")
+    answer = gpt.ask_gpt(prompt = prompt).replace("###", "")
     
-    await callback_query.message.answer(answer)
+    await callback_query.message.answer(answer, parse_mode = "Markdown")
     
     await callback_query.answer()
 
@@ -135,7 +135,7 @@ async def handle_media_message(message : Message):
     Handles voice messages, audio files, video files, and video notes.
     Downloads the file, transcribes it using SpeechProcessing, and sends back
     the transcribed text.
-    The downloaded file is deleted after processing.
+    The downloaded file is deleted after processing
     """
     
     if message.voice:
